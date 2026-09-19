@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charshet="UTF-8">
+    <meta name="viewport" content="width=device-width" initizial-scale="1.0">
+    <title>Computer Lab Reservation System</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-5">
+
+    
+    <div class="container mx-auto max-w-lg bg-white p-6 border border-gray-300 rounded-lg">
+        
+        
+        <h2 class="text-xl font-bold text-center mb-6">Computer Lab Reservation</h2>
+        
+        <form>
+            
+            <div class="mb-4">
+                <label class="block font-semibold mb-1">Borrower's Name:</label>
+                <!-- Form Styling: Mengatur padding, border, background, dan focus state -->
+                <input type="text" class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+            </div>
+
+            
+            <div class="mb-4">
+                <label class="block font-semibold mb-1">Status:</label>
+                <div class="flex gap-4">
+                    <label><input type="radio" name="status" value="Teacher" checked> Teacher</label>
+                    <label><input type="radio" name="status" value="Student"> Student</label>
+                    <label><input type="radio" name="status" value="Organization"> Organization</label>
+                </div>
+            </div>
+
+            
+            <div class="mb-4">
+                <label class="block font-semibold mb-1">Purpose:</label>
+                <input type="text" placeholder="Practicum, Practice, OSIS Meeting, etc." class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+            </div>
+
+            
+            <div class="mb-4">
+                <label class="block font-semibold mb-1">Borrowed Lab:</label>
+                <select class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+                    <option value="Lab 1">Lab 1 (Software)</option>
+                    <option value="Lab 2">Lab 2 (Hardware)</option>
+                </select>
+            </div>
+
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
+                
+                <div>
+                    <label class="block font-semibold mb-1">Date of Use:</label>
+                    <input type="date" class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+                </div>
+
+                
+                <div>
+                    <label class="block font-semibold mb-1">Start Time:</label>
+                    <input type="time" class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+                </div>
+
+                
+                <div>
+                    <label class="block font-semibold mb-1">End Time:</label>
+                    <input type="time" class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+                </div>
+            </div>
+
+            
+            <div class="mb-4">
+                <label class="block font-semibold mb-1">Number of Participants:</label>
+                <input type="number" class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500" required>
+            </div>
+
+            
+            <div class="mb-6">
+                <label class="block font-semibold mb-1">Special Requirements:</label>
+                <textarea placeholder="Need internet access, need a projector, etc." class="w-full p-2 border border-gray-300 bg-gray-50 rounded focus:border-blue-500"></textarea>
+            </div>
+
+            
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded">
+                Submit Reservation
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>:
